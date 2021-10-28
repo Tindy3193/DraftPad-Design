@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Draft_Pad_Design_Ltd.app</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DraftPadDesignLtd.Common\DraftPadDesignLtd.Common.csproj" />
+    <ProjectReference Include="..\DraftPadDesignLtd.Db\DraftPadDesignLtd.Db.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DraftPad Design</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">DRAFTPAD DESIGN</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">HOME </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">ABOUT US </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">SERVICES </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 -DRAFTPAD DESIGN - <a asp-area="" asp-controller="Home" asp-action="Privacy">HOME |</a>
+
+            <a asp-area="" asp-controller="Home" asp-action="Privacy">ABOUT US |</a>
+            <a asp-area="" asp-controller="Home" asp-action="Privacy">SERVICES |</a>
+            <a asp-area="" asp-controller="Home" asp-action="Privacy">PORTFOLIO |</a>
+            <a asp-area="" asp-controller="Home" asp-action="Privacy">CONTACT US |</a>
+
+            <a target="_blank" href="https://www.facebook.com">
+                <img src="/img/Facebook.png" alt="FB" width="10" height="10" style="vertical-align:middle;margin:0px 50px">
+            </a>
+            
+            <a target="_blank" href="https://www.facebook.com">
+                <img src="E:\Projects\Draft Pad Design Ltd\Draft Pad Design Ltd.UI" alt="IN" width="10" height="10"style="vertical-align:middle;margin:0px 50px">
+            </a>
+            <a target="_blank" href="https://www.facebook.com">
+                <img src="E:\Projects\Draft Pad Design Ltd\Draft Pad Design Ltd.UI" alt="TW" width="10" height="10"style="vertical-align:middle;margin:0px 50px">
+            </a>
+        </div>
+
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
